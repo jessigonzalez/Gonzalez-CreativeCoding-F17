@@ -1,0 +1,43 @@
+@charset "utf-8"
+body {
+	  margin: 0px;
+	  padding: 0px;
+	  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	}
+
+	ul.nav {
+		/* hide bullet points */
+		list-style-type: none;
+		margin: 0;
+		padding:0;
+		overflow: hidden;
+		background-color: #CEE7E6;
+	}
+
+	li {
+		float: left;
+	}
+	/* only apply this style to anchor tags within a list item*/
+	li a {
+		/*anchor tags be default display inline, here we will tell them to behave like block level elements*/
+		display: block;
+		text-align: center;
+		padding: 16px 18px;
+		text-decoration: none;
+		/*color: #240535;*/
+		color: #474545;
+	}
+
+	li a:hover:not(.active) {
+		background-color: #22c9b8;
+	}
+
+	li a.active{
+		background-color: #FF5E7E;
+	}
+
+	@media screen and (max-width: 600px){
+		ul.nav li {
+			float: none;
+		}		
+	}
